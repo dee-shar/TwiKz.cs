@@ -1,5 +1,5 @@
 # TwiKz.cs
-Web-API for [twi.kz](https://twi.kz/) website that helps users with a temporary, secure, anonymous, free, and disposable email address
+Web-API for [twi.kz](https://twi.kz/) website that serves as an url shortening tool
 
 ## Example
 ```cs
