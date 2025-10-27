@@ -1,9 +1,21 @@
-# temp_mail_dev.sh
-Web-API for [tempmail.dev](https://tempmail.dev) website that helps users with a temporary, secure, anonymous, free, and disposable email address
+# TwiKz.cs
+Web-API for [twi.kz](https://twi.kz/) website that helps users with a temporary, secure, anonymous, free, and disposable email address
 
 ## Example
-```bash
-source ./temp_mail_dev.sh
-get_cookies
-generate_email
+```cs
+using System;
+using TwiKzApi;
+
+namespace Application
+{
+    internal class Program
+    {
+        static async Task Main()
+        {
+            var api = new TwiKz();
+            string shortUrl = await api.ShortenUrl("https://google.com");
+            Console.WriteLine(shortUrl);
+        }
+    }
+}
 ```
